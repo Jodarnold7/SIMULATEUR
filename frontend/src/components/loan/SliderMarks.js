@@ -1,0 +1,36 @@
+const SliderMarks = {
+  marksTenure: [
+    { value: 0, label: "0" },
+    { value: 24, label: "24" },
+    { value: 48, label: "48" },
+    { value: 72, label: "72" },
+    { value: 96, label: "96" },
+    { value: 120, label: "120" },
+    { value: 144, label: "144" },
+    { value: 168, label: "168" },
+    { value: 192, label: "192" },
+    { value: 216, label: "216" },
+    { value: 240, label: "240" },
+  ],
+  marksInterest: [
+    { value: 0, label: "0" },
+    { value: 5, label: "5%" },
+    { value: 10, label: "10%" },
+    { value: 15, label: "15%" },
+    { value: 20, label: "20%" },
+  ],
+  marksAmount: [
+    { value: 0, label: "0" },
+    { value: 1500000, label: "1.5" },
+    { value: 3000000, label: "3" },
+    { value: 4500000, label: "4.5" },
+    { value: 6000000, label: "6" },
+    { value: 7500000, label: "7.5" },
+    { value: 9000000, label: "9" },
+    { value: 10500000, label: "10.5" },
+    { value: 12000000, label: "12" },
+    { value: 13500000, label: "13.5" },
+    { value: 15000000, label: "15" },
+  ],
+};
+export default SliderMarks;

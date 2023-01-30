@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "a0fc21e1-c9f8-4935-831c-ea831367ab0a",
+		"name": "Loan App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23490831"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"jodarnold@gmail.com\",\r\n    \"password\": \"Jodarnold3003#@@#\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"jodarnold@gmail.com\",\r\n    \"password\": \"Jodarnold3003#@@#\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add loan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY3NDk5NDAwNiwiZXhwIjoxNjc0OTk0NjA2fQ.TEQAENezCRfg8sSP3g6Vvur8Uhcm0kgFaIwBDu3sx8M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"pret personnel\",\r\n    \"monthlyIncome\": \"20000\",\r\n    \"amount\": \"20000\",\r\n    \"description\": \"Pret pour rennovation\",\r\n    \"interest\": \"7\",\r\n    \"tenure\": \"15000\",\r\n    \"emiMonthly\": \"20000\",\r\n    \"totalInterest\": \"20093030\",\r\n    \"totalPayment\": \"3939799393\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/add/loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"add",
+						"loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all loans",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY3NDk5MzM1NSwiZXhwIjoxNjc0OTkzOTU1fQ.JZYDZ73JD3J5K0J8ku6pBrVW-bzQwiZ8sXz4BKxptS0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/loans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"loans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/loan/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2FuVG9rZW4iOjIsImlhdCI6MTY3NDk5MTY2Nn0.DSfzi8yTbKtU2FhnqtAToSNgzCE3o-_xSRdzWh0PVsw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"loan",
+						"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2FuVG9rZW4iOjIsImlhdCI6MTY3NDk5MTY2Nn0.DSfzi8yTbKtU2FhnqtAToSNgzCE3o-_xSRdzWh0PVsw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY3NDk5MjUzMSwiZXhwIjoxNjc0OTkzMTMxfQ.XqqXVk5rKXM2NbIhyIJU9MR2v31xSkZLHpyo6kAZKWk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/test/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"test",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
