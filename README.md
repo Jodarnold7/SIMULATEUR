@@ -1,4 +1,4 @@
-# SIMULATEUR DE PRET
+# SIMULATEUR DE PRET BANCAIRE
 
 Simulateur de pret!
 
